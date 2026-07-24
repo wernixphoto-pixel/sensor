@@ -32,7 +32,7 @@ body{
     overflow:hidden;
 
     /* Hitam 75% */
-    background:rgba(0,0,0,.75);
+    background:rgba(0,0,0,.60);
 
     backdrop-filter:blur(20px);
 }
@@ -112,7 +112,7 @@ body{
 
     object-fit:contain;
 
-    opacity:.50;
+    opacity:.30;
 
     filter:blur(.4px);
 
