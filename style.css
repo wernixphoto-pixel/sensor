@@ -20,7 +20,10 @@ body{
     position:fixed;
     inset:0;
     overflow:hidden;
-    background:rgba(0,0,0,.90);
+
+    /* Hitam 75% */
+    background:rgba(0,0,0,.75);
+
     backdrop-filter:blur(20px);
 }
 
@@ -74,15 +77,17 @@ body{
     opacity:.018;
 
     background-image:
-    repeating-radial-gradient(circle at center,
-    rgba(255,255,255,.15) 0px,
-    transparent 1px,
-    transparent 4px);
+    repeating-radial-gradient(
+        circle at center,
+        rgba(255,255,255,.15) 0px,
+        transparent 1px,
+        transparent 4px
+    );
 
     background-size:220px 220px;
 
     animation:
-    noiseMove 18s linear infinite;
+        noiseMove 18s linear infinite;
 }
 
 /* ===========================
@@ -90,7 +95,6 @@ body{
 =========================== */
 
 .logo{
-
     position:absolute;
 
     left:50%;
@@ -115,15 +119,15 @@ body{
 @keyframes driftX{
 
 0%{
-transform:translate(-40px,-30px) scale(1.08);
+    transform:translate(-40px,-30px) scale(1.08);
 }
 
 50%{
-transform:translate(25px,18px) scale(1.12);
+    transform:translate(25px,18px) scale(1.12);
 }
 
 100%{
-transform:translate(55px,-15px) scale(1.08);
+    transform:translate(55px,-15px) scale(1.08);
 }
 
 }
@@ -131,11 +135,11 @@ transform:translate(55px,-15px) scale(1.08);
 @keyframes driftY{
 
 0%{
-rotate:0deg;
+    rotate:0deg;
 }
 
 100%{
-rotate:3deg;
+    rotate:3deg;
 }
 
 }
@@ -143,11 +147,11 @@ rotate:3deg;
 @keyframes noiseMove{
 
 0%{
-background-position:0 0;
+    background-position:0 0;
 }
 
 100%{
-background-position:220px 220px;
+    background-position:220px 220px;
 }
 
 }
